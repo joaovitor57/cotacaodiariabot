@@ -62,7 +62,7 @@ def handle(msg):
         bot.sendMessage(chatid, '''Use os comandos no teclado para que possa ter acesso as opções do bot.''')
 
     
-bot = telepot.Bot('Seu token gerado pelo @BotFather')
+bot = telepot.Bot('')
 bot.message_loop(handle)
               
 print 'Aguardando comandos ...'
