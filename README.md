@@ -3,7 +3,7 @@ Bot escrito em python junto com a framework telepot para o telegram.
 
 Requisitos:
 
-<li>  Conta no c9.io </li>
-<li>  Um Workspace com o template para Python </li>
-<li>  Token gerado pelo @BotFather </li>
+<li>  Framework telepot instalada: sudo pip install telepot </li>
+<li>  BeatifulSoup: sudo pip install bs4 </li>
+<li>  Edite a parte do token com o seu gerado pelo @BotFather </li>
   
