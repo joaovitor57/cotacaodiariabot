@@ -44,19 +44,24 @@ def handle(msg):
     Bitcoin - Cotação atual do bitcoin''', reply_markup=keyboard)
         
     elif comando == 'Dólar Comercial':
-        bot.sendMessage(chatid,'Cotação atual do dólar em: %s' %dolarc)
+        bot.sendMessage(chatid,'*Cotação atual do dólar em: *', parse_mode="Markdown")
+        bot.sendMessage(chatid,'`%s`'%dolarc,parse_mode="Markdown")
     
     elif comando == 'Dólar Turismo':
-        bot.sendMessage(chatid,'Cotação atual do dólar em: %s' %dolart)
+        bot.sendMessage(chatid,'*Cotação atual do dólar em: *', parse_mode="Markdown")
+        bot.sendMessage(chatid,'`$ %s`'%dolart,parse_mode="Markdown")
     
     elif comando == 'Euro Comercial':
-        bot.sendMessage(chatid,'Cotação atual do euro em: %s' %euroc)
+        bot.sendMessage(chatid,'*Cotação atual do euro em:*',parse_mode="Markdown") 
+        bot.sendMessage(chatid,'`$ %s`'%euroc,parse_mode="Markdown")
     
     elif comando == 'Euro Turismo':
-        bot.sendMessage(chatid,'Cotação atual do euro em: %s' %eurot)
+        bot.sendMessage(chatid,'*Cotação atual do euro em: *',parse_mode="Markdown")
+        bot.sendMessage(chatid,'`€ %s`'%eurot,parse_mode="Markdown")
     
     elif comando == 'Bitcoin':
-        bot.sendMessage(chatid,'Cotação atual do bitcoin em: R$ %s' %bitcoin)
+        bot.sendMessage(chatid,'*Cotação atual do bitcoin em: *',parse_mode="Markdown")
+        bot.sendMessage(chatid,'`R$ %s`'%bitcoin,parse_mode="Markdown")
     
     else:
         bot.sendMessage(chatid, '''Use os comandos no teclado para que possa ter acesso as opções do bot.''')
